@@ -1,6 +1,6 @@
 # vscode-nvim
 
-**Easy to use neovim-config tailored to vscode users.**
+**Easy to use neovim-config tailored to vscode users looking to migrate to Neovim**
 
 ## Setup
 
@@ -40,8 +40,12 @@ after that you should quit and reopen Neovim and everything should be installed!
 + nvim-tree: filetree within neovim
 + treesitter: syntax highlighting for neovim
 
-Install any lsp-server using :LspInstall
-Install any text-highlighter using :TSInstall
+Install any lsp-server using :LspInstall while in a file
+Install any text-highlighter using :TSInstall 'name of file' for example 'rust'
+
+This config is tailored to rust developers and you might have to do research to use other lsp-servers,
+Although using :LspInstall on a file like Typescript will work 99% of the time.
+
 
 
 
