@@ -6,9 +6,23 @@
 
 **Installation**
 
-```text
+### Install:
+
+```bash
 git clone https://github.com/POP303U/neovim-config ~/.config/nvim --depth 1 && nvim
 ```
+
+### Uninstall:
+
+```bash
+# Linux / Macos
+rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim
+# Windows
+rd -r ~\AppData\Local\nvim
+rd -r ~\AppData\Local\nvim-data
+```
+
 Be sure to run :PackerSync on your first startup!
 
 ## Features
