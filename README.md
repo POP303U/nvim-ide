@@ -7,7 +7,7 @@
 ### Install:
 
 ```bash
-git clone https://github.com/POP303U/neovim-config ~/.config/nvim --depth 1 && nvim
+git clone https://github.com/POP303U/vscode-nvim ~/.config/nvim --depth 1 && nvim
 ```
 
 ### Uninstall:
