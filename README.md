@@ -4,8 +4,6 @@
 
 ## Setup
 
-**Installation**
-
 ### Install:
 
 ```bash
