@@ -1,6 +1,7 @@
 # vscode-nvim
 
 **Easy to use neovim-config tailored to vscode users looking to migrate to Neovim**
+This setup is still in early development, bugs and breaking changes may occur!
 
 ## Setup
 
