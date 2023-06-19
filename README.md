@@ -25,6 +25,7 @@ Then, clone my repo using this command:
 git clone https://github.com/POP303U/vscode-nvim ~/.config/nvim --depth 1 && nvim
 ```
 
+The installation on windows might be different depending where your Neovim config is stored.
 After its finished installing, Neovim will open and error a bit. Just press Enter and it will Install all Packages with packer,
 after that you should quit and reopen Neovim and everything should be installed! 
 
