@@ -7,8 +7,7 @@ require 'core.plugins'
 require 'core.options'
 
 -- loads colortheme
--- can be easily changed by using the command ':colorscheme 'name of your theme''
--- for example :colorscheme vscode
+-- you can change your colorscheme here
 require 'core.plugin_config.theme'
 
 -- loads plugins
