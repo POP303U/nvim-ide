@@ -24,7 +24,7 @@ Then, clone my repo using this command:
 ### Install:
 
 + [Ripgrep](https://github.com/BurntSushi/ripgrep) is required for grep searching with Telescope 
-+ [Any Nerd Font] is required to be set as your terminal font for icons in my config
++ [Any Nerd Font](https://www.nerdfonts.com/) is required to be set as your terminal font for icons in my config
 
 ```bash
 git clone https://github.com/POP303U/vscode-nvim ~/.config/nvim --depth 1 && nvim
