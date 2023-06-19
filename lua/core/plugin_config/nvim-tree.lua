@@ -16,8 +16,6 @@ require("nvim-tree").setup({
     icons = {
       glyphs = {
         folder = {
-          arrow_closed = "",
-          arrow_open = "",
         },
       },
     },
