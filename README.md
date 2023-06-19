@@ -21,6 +21,8 @@ Then, clone my repo using this command:
 
 ### Install:
 
+[Ripgrep](https://github.com/BurntSushi/ripgrep) is required for grep searching with Telescope 
+
 ```bash
 git clone https://github.com/POP303U/vscode-nvim ~/.config/nvim --depth 1 && nvim
 ```
