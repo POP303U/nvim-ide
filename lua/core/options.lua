@@ -1,6 +1,9 @@
 -- variable for conciseness
 local options          = vim.opt
 
+-- enable mouse (if you really need it for some reason)
+options.mouse = 'a'
+
 -- disable backups
 options.backup         = false
 options.swapfile       = false

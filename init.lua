@@ -2,8 +2,8 @@
 -- If a new file is created but not mentioned here it will not load.
 
 -- init basic settings
-require 'core.keymaps'
-require 'core.plugins'
+require 'core.lazy'
+require 'core.remap'
 require 'core.options'
 
 -- loads colortheme
@@ -19,4 +19,3 @@ require 'core.plugin_config.nvim-tree'
 
 -- loads lsp-config
 require 'core.plugin_config.lsp.lsp-zero'
-

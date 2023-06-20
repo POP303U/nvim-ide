@@ -13,7 +13,7 @@ vim.opt.background = "dark"
 --vim.cmd.colorscheme "melange"
   vim.cmd.colorscheme "vscode"
 --vim.cmd.colorscheme "nordic"
-
+--vim.cmd.colorscheme "rose-pine"
 
 --these themes already have a light/dark theme
 --vim.cmd.colorscheme "catppuccin-latte"
