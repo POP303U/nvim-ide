@@ -3,6 +3,7 @@
 **Easy to use neovim-config tailored to vscode users looking to migrate to Neovim**
 
 This setup is still in early development, bugs and breaking changes may occur!
+Important update: this config switched to using lazy as the package manager!  
 
 ## Setup
 
@@ -30,9 +31,7 @@ Then, clone my repo using this command:
 git clone https://github.com/POP303U/vscode-nvim ~/.config/nvim --depth 1 && nvim
 ```
 
-The installation on windows might be different depending where your Neovim config is stored.
-After its finished installing, Neovim will open and error a bit. Just press Enter and it will Install all Packages with packer,
-after that you should quit and reopen Neovim and everything should be installed! 
+After Neovim started up and lazy installed all plugins, quit and reopen Neovim!
 
 ## Features
 
@@ -52,7 +51,4 @@ Install any lsp-server using :LspInstall while in a file
 
 This config is tailored to rust developers and you might have to do research to use other lsp-servers,
 although using :LspInstall on a file like Typescript or Haskell will work 99% of the time.
-
-
-
 
