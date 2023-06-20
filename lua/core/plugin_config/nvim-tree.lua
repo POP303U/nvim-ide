@@ -3,6 +3,7 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 vim.cmd( [[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]] )
+
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 
@@ -11,14 +12,6 @@ require("nvim-tree").setup({
   sort_by = "case_sensitive",
   view = {
     width = 35,
-  },
-  renderer = {
-    icons = {
-      glyphs = {
-        folder = {
-        },
-      },
-    },
   },
   update_focused_file = {
     enable = true,

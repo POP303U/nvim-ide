@@ -3,6 +3,7 @@
 **Easy to use neovim-config tailored to vscode users looking to migrate to Neovim**
 
 This setup is still in early development, bugs and breaking changes may occur!
+
 Important update: this config switched to using lazy as the package manager!  
 
 ## Setup
@@ -37,7 +38,7 @@ After Neovim started up and lazy installed all plugins, quit and reopen Neovim!
 
 **Plugins**
 
-+ packer: easy to use package manager
++ lazy: fastest package manager in town 
 + lualine: custom status bar for neovim
 + telescope: fuzzy finder in neovim
 + lsp-zero: lsp-server support with lsp-zero
