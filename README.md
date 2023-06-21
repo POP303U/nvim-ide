@@ -57,7 +57,12 @@ although using :LspInstall on a file like Typescript or Haskell will work 99% of
 
 Everytime the 'leader' key is mentioned it will refer to the Space key
 
-**Plugin Specific**
+Everytime the 'C' key is mentioned it will refer to Control/Ctrl
+
+Everytime the 'CR' key is mentioned it will refer to the Enter key
+
+## Plugin Specific
+
 ### startify
 Startify will also provide a splash screen with recent directories and files
 + 'leader'ss: Save a session under a name  
@@ -71,5 +76,53 @@ Startify will also provide a splash screen with recent directories and files
 
 ### vim-maximizer
 + 'leader'sm: Maximize current buffer
+
+### telescope 
++ 'leader'ff: Find files in current directory recursively
++ 'leader'fo: Find recently opened files
++ 'leader'fg: Search for patterns/words in current directory 
++ 'leader'fh: Search for help files (uncommon)
+
+### nvim-cmp
++ 'C-p': Select next completion
++ 'C-n': Select previous completion
++ 'C-f': Scroll up in the documentation
++ 'C-d': Scroll down in the documentation
++ 'C-Space': Open snippets
++ 'C-e': Close snippets
++ 'CR': Confirm current completion
+
+### lsp-zero
++ 'gd': Jumps to problems or diagnostics in code
++ 'K': Get info about a variable, function etc.
++ 'leader'vws: Query a function name etc. (i don't understand this)
++ 'leader'vd: Show diagnostic
++ '[d': Go to next diagnostic
++ ']d': Go to previous diagnostic
++ 'leader'vca: Perform code action on analyzed code
++ 'leader'vrr: Finds references to code
++ 'leader'vrn: Renames EVERY definition in your code (be careful!)
+
+## Global Keymaps
+
++ 'leader'sth: Set theme to light (temporary)
++ 'leader'std: Set theme to dark (temporary)
++ 'leader'cs: Set theme to any available theme that is specified (temporary)
++ 'leader'-: Increment a number (if your cursor is pointing at one)
++ 'leader'+: Decrement a number (if your cursor is pointing at one)
++ 'leader'sv: Split window vertically
++ 'leader'sh: Split window horizontally
++ 'leader'se: Even the splits out
++ 'leader'sx: Close current buffer
++ 'leader'to: Open new tab
++ 'leader'tn: Go to next tab
++ 'leader'tp: Go to previous tab
++ 'leader'tx: Close current tab
++ 'K': Move highlighted text up and indent accordingly
++ 'J': Move highlighted text down and indent accordingly
++ 'leader'y: copy into the system clipboard (another action like y or d is required after)
++ 'leader'rw: replace all words in current buffer
+
+
 
 
