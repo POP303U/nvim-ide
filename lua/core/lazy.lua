@@ -39,13 +39,33 @@ local plugins = {
 
   ---------------------------------------------
    -- file explorer
-  'nvim-tree/nvim-tree.lua',
-  'nvim-tree/nvim-web-devicons',
+  {
+    'nvim-tree/nvim-tree.lua',
+    dependencies = {
+      'nvim-tree/nvim-web-devicons',
+    },
+  },
 
   ---------------------------------------------
    -- navigation
   'christoomey/vim-tmux-navigator',
   'szw/vim-maximizer',
+
+  ---------------------------------------------
+   -- keybind help
+ {
+  "folke/which-key.nvim",
+  event = "VeryLazy",
+  init = function()
+    vim.o.timeout = true
+    vim.o.timeoutlen = 300
+  end,
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
+  },
 
   ---------------------------------------------
    -- status line
@@ -65,6 +85,10 @@ local plugins = {
     tag = '0.1.0',
     dependencies = { {'nvim-lua/plenary.nvim'} }
   },
+
+  ---------------------------------------------
+   -- startup screen
+  'mhinz/vim-startify',
 
   ---------------------------------------------
    -- lsp-zero

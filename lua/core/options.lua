@@ -1,3 +1,7 @@
+-- disable netrw at the very start of your init.lua (necessary for config to work)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- variable for conciseness
 local options          = vim.opt
 
@@ -62,3 +66,10 @@ options.termguicolors  = true
 -- fix word detection
 options.iskeyword:append("-")
 
+-- Enable auto-pairing of brackets, quotes, etc.
+vim.cmd('inoremap " ""<left>')
+vim.cmd('inoremap \' \'\'<left>')
+vim.cmd('inoremap ( ()<left>')
+vim.cmd('inoremap [ []<left>')
+vim.cmd('inoremap { {}<left>')
+vim.cmd('inoremap {<CR> {<CR>}<ESC>O')

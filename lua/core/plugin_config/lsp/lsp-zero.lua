@@ -4,10 +4,12 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
   'lua_ls',
+  'rust_analyzer',
 })
 
 -- Fix Undefined global 'vim'
 lsp.nvim_workspace()
+
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}

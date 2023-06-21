@@ -53,3 +53,7 @@ Install any lsp-server using :LspInstall while in a file
 This config is tailored to rust developers and you might have to do research to use other lsp-servers,
 although using :LspInstall on a file like Typescript or Haskell will work 99% of the time.
 
+## Keybindings
+
+**Plugin Specific**
++ <Space>sl

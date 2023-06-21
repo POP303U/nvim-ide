@@ -48,3 +48,9 @@ keymap.set('n', '<leader>sm', ':MaximizerToggle<CR>')
 -- nvim-tree
 keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>')
 keymap.set('n', '<leader>o', ':NvimTreeFocus<CR>')
+
+-- startify
+keymap.set('n', '<leader>sl', ':SLoad<CR>')
+keymap.set('n', '<leader>ss', ':SSave<CR>')
+keymap.set('n', '<leader>sd', ':SDelete<CR>')
+keymap.set('n', '<leader>sc', ':SClose<CR>')

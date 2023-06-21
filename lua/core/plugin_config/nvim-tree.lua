@@ -1,25 +1,54 @@
--- disable netrw at the very start of your init.lua (necessary for config to work)
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+local status_ok, nvim_tree = pcall(require, "nvim-tree")
+if not status_ok then
+  return
+end
+
+local config_status_ok, nvim_tree_config = pcall(require, "nvim-tree.config")
+if not config_status_ok then
+  return
+end
 
 vim.cmd( [[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]] )
 
--- set termguicolors to enable highlight groups
-vim.opt.termguicolors = true
+local tree_cb = nvim_tree_config.nvim_tree_callback
 
--- OR setup with some options
-require("nvim-tree").setup({
-  sort_by = "case_sensitive",
-  view = {
-    width = 35,
-  },
+nvim_tree.setup {
   update_focused_file = {
     enable = true,
-    update_root = true,
+    update_cwd = true,
   },
-  filters = {
-    dotfiles = false,
+  renderer = {
+    root_folder_modifier = ":t",
+ -- These icons are visible when you install web-devicons
+    icons = {
+      glyphs = {
+        default = "",
+        symlink = "",
+        folder = {
+          arrow_open = "",
+          arrow_closed = "",
+          default = "",
+          open = "",
+          empty = "",
+          empty_open = "",
+          symlink = "",
+          symlink_open = "",
+        },
+      },
+    },
   },
-})
-
-
+  diagnostics = {
+    enable = true,
+    show_on_dirs = true,
+    icons = {
+      hint = "H",
+      info = "I",
+      warning = "W",
+      error = "E",
+    },
+  },
+  view = {
+    width = 30,
+    side = "left",
+  },
+}

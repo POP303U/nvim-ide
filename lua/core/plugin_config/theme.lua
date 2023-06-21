@@ -11,7 +11,7 @@ vim.opt.background = "dark"
 --vim.cmd.colorscheme "oxocarbon"
 --vim.cmd.colorscheme "tender"
 --vim.cmd.colorscheme "melange"
-  vim.cmd.colorscheme "vscode"
+vim.cmd.colorscheme "vscode"
 --vim.cmd.colorscheme "nordic"
 --vim.cmd.colorscheme "rose-pine"
 
