@@ -53,7 +53,23 @@ Install any lsp-server using :LspInstall while in a file
 This config is tailored to rust developers and you might have to do research to use other lsp-servers,
 although using :LspInstall on a file like Typescript or Haskell will work 99% of the time.
 
-## Keybindings
+## Keybindings and Features
+
+Everytime the 'leader' key is mentioned it will refer to the Space key
 
 **Plugin Specific**
-+ <Space>sl
+## startify
+Startify will also provide a splash screen with recent directories and files
++ 'leader'ss: Save a session under a name  
++ 'leader'sl: Load a session with a name
++ 'leader'sd: Delete a session with a name 
++ 'leader'sc: Close the current session  
+
+## nvim-tree
++ 'leader'e: Open the file explorer
++ 'leader'o: Focus on the file explorer
+
+## vim-maximizer
++ 'leader'sm: Maximize current buffer
+
+
