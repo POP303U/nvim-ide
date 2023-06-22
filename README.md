@@ -1,10 +1,7 @@
 # vscode-nvim
 
-**Easy to use neovim-config tailored to vscode users looking to migrate to Neovim**
-
-This setup is still in early development, bugs and breaking changes may occur!
-
-Important update: this config switched to using lazy as the package manager!  
+***IMPORTANT***:
+This is not a vscode config! It is purely for vscode users wanting to use Neovim with minimal setup.
 
 ## Setup
 
@@ -122,7 +119,4 @@ Startify will also provide a splash screen with recent directories and files
 + 'J': Move highlighted text down and indent accordingly
 + 'leader'y: copy into the system clipboard (another action like y or d is required after)
 + 'leader'rw: replace all words in current buffer
-
-
-
 
