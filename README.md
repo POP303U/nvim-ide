@@ -1,6 +1,7 @@
 # vscode-nvim
 
 ***IMPORTANT***:
+
 This is not a vscode config! It is purely for vscode users wanting to use Neovim with minimal setup.
 
 ## Setup

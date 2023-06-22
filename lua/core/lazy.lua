@@ -10,6 +10,7 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 
+--TODO
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
@@ -90,6 +91,13 @@ local plugins = {
    -- startup screen
   'mhinz/vim-startify',
 
+  ---------------------------------------------
+   -- terminal 
+  {'akinsho/toggleterm.nvim', version = "*", config = true},
+
+  ---------------------------------------------
+   -- cmd-line
+  'gelguy/wilder.nvim',
   ---------------------------------------------
    -- lsp-zero
   {
