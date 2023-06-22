@@ -90,6 +90,12 @@ Startify will also provide a splash screen with recent directories and files
 + 'C-e': Close snippets
 + 'CR': Confirm current completion
 
+### vim-tmux-navigator
++ 'C'h: Move to left buffer
++ 'C'j: Move to the buffer above
++ 'C'k: Move to the buffer below
++ 'C'l: Move to right buffer
+
 ### lsp-zero
 + 'gd': Jumps to problems or diagnostics in code
 + 'K': Get info about a variable, function etc.
@@ -100,6 +106,11 @@ Startify will also provide a splash screen with recent directories and files
 + 'leader'vca: Perform code action on analyzed code
 + 'leader'vrr: Finds references to code
 + 'leader'vrn: Renames EVERY definition in your code (be careful!)
+
+### toggleterm
++ 'leader'tv: Open vertical terminal
++ 'leader'th: Open horizontal terminal
++ 'leader'tf: Open floating terminal
 
 ## Global Keymaps
 
