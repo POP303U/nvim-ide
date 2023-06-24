@@ -5,13 +5,13 @@ vim.opt.background = "dark"
 --vim.cmd.colorscheme "aurora"
 
 --these themes use vim.opt.background for light/dark mode
-vim.cmd.colorscheme "nightfly"
+--vim.cmd.colorscheme "nightfly"
 --vim.cmd.colorscheme "moonfly"
 --vim.cmd.colorscheme "gruvbox"
 --vim.cmd.colorscheme "oxocarbon"
 --vim.cmd.colorscheme "tender"
 --vim.cmd.colorscheme "melange"
---vim.cmd.colorscheme "vscode"
+vim.cmd.colorscheme "vscode"
 --vim.cmd.colorscheme "nordic"
 --vim.cmd.colorscheme "rose-pine"
 

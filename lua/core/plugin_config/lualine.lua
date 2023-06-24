@@ -1,3 +1,4 @@
+-- get status of the lsp in a string
 local function get_lsp_status()
   local clients = vim.lsp.get_active_clients()
   if next(clients) == nil then

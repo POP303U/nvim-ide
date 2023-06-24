@@ -1,5 +1,6 @@
 # vscode-nvim
-Release Stable 1.0
+
+**Release Stable 1.0**
 
 ***IMPORTANT***:
 This is not a vscode config! It is purely for vscode users wanting to use Neovim with minimal setup.

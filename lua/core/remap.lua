@@ -1,9 +1,8 @@
--- variables for conciseness
-local config = vim.g
+-- variable for conciseness
 local keymap = vim.keymap
 
 -- leader key
-config.mapleader = ' '
+vim.g.mapleader = ' '
 
 -- set theme light or dark
 keymap.set('n', '<leader>sth', ':lua vim.opt.background = "light"<cr>')
@@ -14,8 +13,8 @@ keymap.set('n', '<leader>cs', ':colorscheme ')
 keymap.set('n', '<leader>nh', ':nohl<CR>')
 keymap.set('n', 'x', '"_x')
 
-keymap.set('n', '<leader>+', '<c-a>')
-keymap.set('n', '<leader>-', '<c-x>')
+keymap.set('n', '<leader>+', '<c-a>')       -- increment selected number 
+keymap.set('n', '<leader>-', '<c-x>')       -- decrement selected number
 
 keymap.set('n', '<leader>sv', '<c-w>v')     -- split window vertically
 keymap.set('n', '<leader>sh', '<c-w>s')     -- split window horizontally
