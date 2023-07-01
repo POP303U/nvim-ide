@@ -13,7 +13,6 @@ options.backup         = false
 options.swapfile       = false
 options.undodir        = os.getenv("HOME") .. "/.vim/undodir"
 options.undofile       = true
-
 -- numbers 
 options.number         = true
 options.relativenumber = true
@@ -73,4 +72,5 @@ vim.cmd('inoremap \' \'\'<left>')
 vim.cmd('inoremap ( ()<left>')
 vim.cmd('inoremap [ []<left>')
 vim.cmd('inoremap { {}<left>')
+vim.cmd('inoremap < <><left>')
 vim.cmd('inoremap {<CR> {<CR>}<ESC>O')

@@ -49,7 +49,7 @@ local plugins = {
 
   ---------------------------------------------
    -- navigation
-  'christoomey/vim-tmux-navigator',
+  'numToStr/Navigator.nvim',
   'szw/vim-maximizer',
 
   ---------------------------------------------
@@ -92,12 +92,17 @@ local plugins = {
   'mhinz/vim-startify',
 
   ---------------------------------------------
-   -- terminal 
+   -- terminal
   {'akinsho/toggleterm.nvim', version = "*", config = true},
 
   ---------------------------------------------
-   -- cmd-line
-  'gelguy/wilder.nvim',
+   -- indenting help
+  'lukas-reineke/indent-blankline.nvim',
+
+  ---------------------------------------------
+   -- type hints
+   'lvimuser/lsp-inlayhints.nvim',
+
   ---------------------------------------------
    -- lsp-zero
   {
