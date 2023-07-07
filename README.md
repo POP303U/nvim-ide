@@ -20,13 +20,15 @@ rd -r ~\AppData\Local\nvim
 rd -r ~\AppData\Local\nvim-data
 ```
 
-Then, clone my repo using this command:
 
 ### Install:
 
+These thinks have to be installed for the config to work.
 + [Ripgrep](https://github.com/BurntSushi/ripgrep) is required for grep searching with Telescope 
 + [Any Nerd Font](https://www.nerdfonts.com/) is required to be set as your terminal font for icons in my config
-
++ [C Compiler](https://www.mingw-w64.org/downloads/) Windows users must have mingw installed and set on path.
+  
+Then, clone my repo using this command:
 ```bash
 git clone https://github.com/POP303U/vscode-nvim ~/.config/nvim --depth 1 && nvim
 ```
