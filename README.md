@@ -32,7 +32,7 @@ Then, clone my repo using this command:
 ```bash
 git clone https://github.com/POP303U/vscode-nvim ~/.config/nvim --depth 1 && nvim
 ```
-
+Installation directory might be different for Windows users.
 After Neovim started up and lazy installed all plugins, quit and reopen Neovim!
 
 ## Features
