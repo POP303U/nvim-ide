@@ -8,7 +8,8 @@ This is not a vscode config! It is purely for vscode users wanting to use Neovim
 ## Preview
 
 Really cool configuration:
-![Sick Preview](https://github.com/POP303U/vscode-nvim/assets/115036828/3ec5ae21-4e19-4b5a-bc43-4c9d6e9adfad)
+![6](https://github.com/POP303U/vscode-nvim/assets/115036828/042329d5-2ac6-4d73-9505-e921abf80cf6)
+
 
 ## Setup
 
