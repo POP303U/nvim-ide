@@ -5,6 +5,11 @@
 ***IMPORTANT***:
 This is not a vscode config! It is purely for vscode users wanting to use Neovim with minimal setup.
 
+## Preview
+
+Really cool configuration:
+![Sick Preview](https://github.com/POP303U/vscode-nvim/assets/115036828/3ec5ae21-4e19-4b5a-bc43-4c9d6e9adfad)
+
 ## Setup
 
 Uninstall any existing config you might have installed!
