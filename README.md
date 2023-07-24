@@ -52,6 +52,7 @@ After Neovim started up and lazy installed all plugins, quit and reopen Neovim!
 + nvim-cmp: auto completion with nvim-cmp
 + nvim-tree: filetree within neovim
 + treesitter: syntax highlighting for neovim
++ transparent: transparency support for neovim
 
 Treesitter will install highlighting automatically when entering a file.
 
