@@ -5,6 +5,12 @@
 ***IMPORTANT***:
 This is not a vscode config! It is purely for vscode users wanting to use Neovim with minimal setup.
 
+## Preview
+
+Really cool configuration:
+![6](https://github.com/POP303U/vscode-nvim/assets/115036828/042329d5-2ac6-4d73-9505-e921abf80cf6)
+
+
 ## Setup
 
 Uninstall any existing config you might have installed!
@@ -32,7 +38,7 @@ Then, clone my repo using this command:
 ```bash
 git clone https://github.com/POP303U/vscode-nvim ~/.config/nvim --depth 1 && nvim
 ```
-
+Installation directory might be different for Windows users.
 After Neovim started up and lazy installed all plugins, quit and reopen Neovim!
 
 ## Features
@@ -46,6 +52,7 @@ After Neovim started up and lazy installed all plugins, quit and reopen Neovim!
 + nvim-cmp: auto completion with nvim-cmp
 + nvim-tree: filetree within neovim
 + treesitter: syntax highlighting for neovim
++ transparent: transparency support for neovim
 
 Treesitter will install highlighting automatically when entering a file.
 
