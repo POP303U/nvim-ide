@@ -104,6 +104,10 @@ local plugins = {
    'lvimuser/lsp-inlayhints.nvim',
 
   ---------------------------------------------
+   -- transparency support
+   'xiyaowong/transparent.nvim',
+
+  ---------------------------------------------
    -- lsp-zero
   {
     'VonHeikemen/lsp-zero.nvim',
