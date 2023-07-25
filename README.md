@@ -35,9 +35,14 @@ These packages/fonts have to be installed for the config to work.
 + [C Compiler](https://www.mingw-w64.org/downloads/) Windows users must have mingw installed and set on path.
   
 Then, clone my repo using this command:
-```bash
-git clone https://github.com/POP303U/vscode-nvim ~/.config/nvim --depth 1 && nvim
 ```
+# Linux / Macos:
+git clone https://github.com/POP303U/vscode-nvim ~/.config/nvim --depth 1 && nvim
+
+# Windows:
+git clone https://github.com/NvChad/NvChad $HOME\AppData\Local\nvim --depth 1; nvim
+```
+
 Installation directory might be different for Windows users.
 After Neovim started up and lazy installed all plugins, quit and reopen Neovim!
 
