@@ -40,7 +40,7 @@ Then, clone my repo using this command:
 git clone https://github.com/POP303U/vscode-nvim ~/.config/nvim --depth 1 && nvim
 
 # Windows:
-git clone https://github.com/NvChad/NvChad $HOME\AppData\Local\nvim --depth 1; nvim
+git clone https://github.com/POP303U/vscode-nvim $HOME\AppData\Local\nvim --depth 1; nvim
 ```
 
 Installation directory might be different for Windows users.
