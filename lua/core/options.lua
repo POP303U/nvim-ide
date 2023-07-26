@@ -1,9 +1,9 @@
+-- variable for conciseness
+local options          = vim.opt
+
 -- disable netrw at the very start of your init.lua (necessary for config to work)
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
-
--- variable for conciseness
-local options          = vim.opt
 
 -- enable mouse (if you really need it for some reason)
 options.mouse = 'a'
@@ -12,11 +12,16 @@ options.mouse = 'a'
 options.backup         = false
 options.swapfile       = false
 
+-- check for windows
+options.undofile       = true
 if package.config:sub(1,1) == "/" then
   options.undodir        = os.getenv("HOME") .. "/.vim/undodir"
 end
 
-options.undofile       = true
+-- better searching 
+options.hlsearch = false
+options.incsearch = true
+
 -- numbers 
 options.number         = true
 options.relativenumber = true
@@ -32,8 +37,9 @@ options.autowrite      = true
 options.autoread       = true
 
 -- tabs & indentation
-options.tabstop        = 2
-options.shiftwidth     = 2
+options.tabstop        = 4
+options.shiftwidth     = 4
+options.softtabstop    = 4
 options.expandtab      = true
 options.autoindent     = true
 
@@ -48,7 +54,7 @@ options.smartcase      = true
 options.scrolloff      = 8
 
 -- blazingly fast update time 
-options.updatetime     = 80
+options.updatetime     = 50
 
 -- appearance
 options.background     = "dark"
