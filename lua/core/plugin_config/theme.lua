@@ -3,6 +3,8 @@ vim.opt.background = "dark"
 
 --these themes only have dark mode
 --vim.cmd.colorscheme "aurora"
+--vim.cmd.colorscheme "shades_of_purple"
+--vim.cmd.colorscheme "space-vim-dark"
 
 --these themes use vim.opt.background for light/dark mode
 --vim.cmd.colorscheme "nightfly"
@@ -11,9 +13,11 @@ vim.opt.background = "dark"
 --vim.cmd.colorscheme "oxocarbon"
 --vim.cmd.colorscheme "tender"
 --vim.cmd.colorscheme "melange"
-vim.cmd.colorscheme "vscode"
+--vim.cmd.colorscheme "vscode"
+--vim.cmd.colorscheme "PaperColor"
 --vim.cmd.colorscheme "nordic"
 --vim.cmd.colorscheme "rose-pine"
+require("onedark").setup({})
 
 --these themes already have a light/dark theme
 --vim.cmd.colorscheme "catppuccin-latte"

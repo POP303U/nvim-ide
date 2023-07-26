@@ -24,9 +24,13 @@ local plugins = {
 
   ---------------------------------------------
    -- a world of colors in neovim
+  'monsonjeremy/onedark.nvim',
+  'NLKNguyen/papercolor-theme',
   'rose-pine/neovim',
+  'Rigellute/shades-of-purple.vim',
   'catppuccin/nvim',
   'bluz71/vim-nightfly-colors',
+  'liuchengxu/space-vim-dark',
   'bluz71/vim-moonfly-colors',
   'jacoborus/tender.vim',
   'ellisonleao/gruvbox.nvim',
