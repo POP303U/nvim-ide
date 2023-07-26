@@ -1,6 +1,13 @@
+
+--  _   _                 _           
+-- | \ | | ___  _____   _(_)_ __ ___  
+-- |  \| |/ _ \/ _ \ \ / / | '_ ` _ \ 
+-- | |\  |  __/ (_) \ V /| | | | | | |
+-- |_| \_|\___|\___/ \_/ |_|_| |_| |_|
+
 -- This file just loads all the lua files and configurations.
 -- If a new file is created but not mentioned here it will not load.
-
+--
 -- init basic settings
 require 'core.lazy'
 require 'core.remap'
@@ -22,3 +29,6 @@ require 'core.plugin_config.indent-blankline'
 
 -- loads lsp-config
 require 'core.plugin_config.lsp.lsp-zero'
+
+-- load transparency last
+require 'core.plugin_config.transparent'

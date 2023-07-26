@@ -11,7 +11,11 @@ options.mouse = 'a'
 -- disable backups
 options.backup         = false
 options.swapfile       = false
-options.undodir        = os.getenv("HOME") .. "/.vim/undodir"
+
+if package.config:sub(1,1) == "/" then
+  options.undodir        = os.getenv("HOME") .. "/.vim/undodir"
+end
+
 options.undofile       = true
 -- numbers 
 options.number         = true
