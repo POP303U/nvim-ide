@@ -89,7 +89,13 @@ local plugins = {
 
   ---------------------------------------------
    -- startup screen
-  'mhinz/vim-startify',
+  {
+    "startup-nvim/startup.nvim",
+    dependencies = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
+    init = function()
+      require("startup").setup({theme = "startify"}) -- put theme name here
+    end
+  },
 
   ---------------------------------------------
    -- terminal
@@ -133,5 +139,4 @@ local plugins = {
 }
 
 local opts = {}
-
 require("lazy").setup(plugins, opts)
