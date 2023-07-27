@@ -12,10 +12,12 @@ options.mouse = 'a'
 options.backup         = false
 options.swapfile       = false
 
--- check for windows
+-- check for windows and set terminal_emulator
 options.undofile       = true
 if package.config:sub(1,1) == "/" then
   options.undodir        = os.getenv("HOME") .. "/.vim/undodir"
+else 
+  print("hi")
 end
 
 -- better searching 

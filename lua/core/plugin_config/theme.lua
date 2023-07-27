@@ -17,7 +17,7 @@ vim.opt.background = "dark"
 --vim.cmd.colorscheme "PaperColor"
 --vim.cmd.colorscheme "nordic"
 --vim.cmd.colorscheme "rose-pine"
-require("onedark").setup({})
+--require("onedark").setup({})
 
 --these themes already have a light/dark theme
 --vim.cmd.colorscheme "catppuccin-latte"
@@ -28,7 +28,7 @@ require("onedark").setup({})
 --vim.cmd.colorscheme "tokyonight-storm"
 --vim.cmd.colorscheme "tokyonight-day"
 --vim.cmd.colorscheme "tokyonight-moon"
---vim.cmd.colorscheme "ayu-dark"
+vim.cmd.colorscheme "ayu-dark"
 --vim.cmd.colorscheme "ayu-light"
 
 -- default color scheme

@@ -1,5 +1,6 @@
 -- variable for conciseness
 local keymap = vim.keymap
+local current_dir = vim.fn.getcwd()
 
 -- leader key
 vim.g.mapleader = ' '
@@ -54,10 +55,10 @@ keymap.set('n', '<leader>ss', ':SSave<CR>')
 keymap.set('n', '<leader>sd', ':SDelete<CR>')
 keymap.set('n', '<leader>sc', ':SClose<CR>')
 
--- toggleterm
-keymap.set('n', '<leader>th', ':ToggleTerm size=10 dir=~/ direction=horizontal<CR>')
-keymap.set('n', '<leader>tv', ':ToggleTerm size=40 dir=~/ direction=vertical<CR>')
-keymap.set('n', '<leader>tf', ':ToggleTerm size=20 dir=~/ direction=float<CR>')
+-- ToggleTerm
+keymap.set('n', '<leader>th', ':ToggleTerm size=10 dir='.. current_dir ..' direction=horizontal<CR>')
+keymap.set('n', '<leader>tv', ':ToggleTerm size=40 dir='.. current_dir ..' direction=vertical<CR>')
+keymap.set('n', '<leader>tf', ':ToggleTerm size=20 dir='.. current_dir ..' direction=float<CR>')
 keymap.set('t', '<esc>', [[<C-\><C-n>]])
 keymap.set('t', '<C-h>', [[<Cmd>wincmd h<CR>]])
 keymap.set('t', '<C-j>', [[<Cmd>wincmd j<CR>]])
