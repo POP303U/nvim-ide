@@ -68,8 +68,8 @@ options.splitbelow     = true
 -- indenting options
 options.autoindent     = true -- auto indent 
 options.smartindent    = true -- smart indent
-options.tabstop        = 2
-options.shiftwidth     = 2
+options.tabstop        = 4
+options.shiftwidth     = 4
 options.expandtab      = true
 
 -- true color 24-bit (for terminals that support it)
