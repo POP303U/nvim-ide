@@ -16,8 +16,6 @@ options.swapfile       = false
 options.undofile       = true
 if package.config:sub(1,1) == "/" then
   options.undodir        = os.getenv("HOME") .. "/.vim/undodir"
-else 
-  print("hi")
 end
 
 -- better searching 
