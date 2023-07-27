@@ -13,10 +13,12 @@ vim.opt.background = "dark"
 --vim.cmd.colorscheme "oxocarbon"
 --vim.cmd.colorscheme "tender"
 --vim.cmd.colorscheme "melange"
---vim.cmd.colorscheme "vscode"
+vim.cmd.colorscheme "vscode"
 --vim.cmd.colorscheme "PaperColor"
 --vim.cmd.colorscheme "nordic"
-vim.cmd.colorscheme "rose-pine"
+--vim.cmd.colorscheme "edge"
+--vim.cmd.colorscheme "rose-pine"
+--vim.cmd.colorscheme "nightfox"
 --require("onedark").setup({})
 
 --these themes already have a light/dark theme
@@ -33,4 +35,4 @@ vim.cmd.colorscheme "rose-pine"
 
 -- default color scheme
 -- ugly :(
--- vim.cmd.colorscheme "default"
+--vim.cmd.colorscheme "default"

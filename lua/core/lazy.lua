@@ -24,6 +24,8 @@ local plugins = {
 
   ---------------------------------------------
    -- a world of colors in neovim
+  'EdenEast/nightfox.nvim',
+  'sainnhe/edge',
   'monsonjeremy/onedark.nvim',
   'NLKNguyen/papercolor-theme',
   'rose-pine/neovim',
