@@ -1,9 +1,9 @@
-# vscode-nvim
+# nvim-ide
 
 **Release Stable 1.0**
 
-***IMPORTANT***:
-This is not a vscode config! It is purely for vscode users wanting to use Neovim with minimal setup.
+This is my attempt at making the most userfriendly Neovim configuration for beginners. It functions like a true IDE thanks to the native Neovim LSP api, which can handle autocompletion, code snippets and more.
+
 
 ## Preview
 
@@ -37,10 +37,10 @@ These packages/fonts have to be installed for the config to work.
 Then, clone my repo using this command:
 ```
 # Linux / Macos:
-git clone https://github.com/POP303U/vscode-nvim ~/.config/nvim --depth 1 && nvim
+git clone https://github.com/POP303U/nvim-ide ~/.config/nvim --depth 1 && nvim
 
 # Windows:
-git clone https://github.com/POP303U/vscode-nvim $HOME\AppData\Local\nvim --depth 1; nvim
+git clone https://github.com/POP303U/nvim-ide $HOME\AppData\Local\nvim --depth 1; nvim
 ```
 
 Installation directory might be different for Windows users.
@@ -146,4 +146,3 @@ Startify will also provide a splash screen with recent directories and files
 + 'J': Move highlighted text down and indent accordingly
 + 'leader'y: copy into the system clipboard (another action like y or d is required after)
 + 'leader'rw: replace all words in current buffer
-
