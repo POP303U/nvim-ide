@@ -1,4 +1,4 @@
--- set dark or light 
+-- set dark or light
 vim.opt.background = "dark"
 
 --these themes only have dark mode
@@ -13,11 +13,11 @@ vim.opt.background = "dark"
 --vim.cmd.colorscheme "oxocarbon"
 --vim.cmd.colorscheme "tender"
 --vim.cmd.colorscheme "melange"
-vim.cmd.colorscheme "vscode"
+--vim.cmd.colorscheme "vscode"
 --vim.cmd.colorscheme "PaperColor"
 --vim.cmd.colorscheme "nordic"
 --vim.cmd.colorscheme "edge"
---vim.cmd.colorscheme "rose-pine"
+vim.cmd.colorscheme "rose-pine"
 --vim.cmd.colorscheme "nightfox"
 --require("onedark").setup({})
 
