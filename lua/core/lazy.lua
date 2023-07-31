@@ -24,9 +24,15 @@ local plugins = {
 
   ---------------------------------------------
    -- a world of colors in neovim
+  'EdenEast/nightfox.nvim',
+  'sainnhe/edge',
+  'monsonjeremy/onedark.nvim',
+  'NLKNguyen/papercolor-theme',
   'rose-pine/neovim',
+  'Rigellute/shades-of-purple.vim',
   'catppuccin/nvim',
   'bluz71/vim-nightfly-colors',
+  'liuchengxu/space-vim-dark',
   'bluz71/vim-moonfly-colors',
   'jacoborus/tender.vim',
   'ellisonleao/gruvbox.nvim',
@@ -89,7 +95,13 @@ local plugins = {
 
   ---------------------------------------------
    -- startup screen
-  'mhinz/vim-startify',
+  {
+    "startup-nvim/startup.nvim",
+    dependencies = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
+    init = function()
+      require("startup").setup({theme = "startify"}) -- put theme name here
+    end
+  },
 
   ---------------------------------------------
    -- terminal
@@ -133,5 +145,4 @@ local plugins = {
 }
 
 local opts = {}
-
 require("lazy").setup(plugins, opts)

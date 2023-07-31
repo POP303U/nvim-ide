@@ -4,7 +4,6 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
   'lua_ls',
-  'rust_analyzer',
 })
 
 lsp.set_preferences({
