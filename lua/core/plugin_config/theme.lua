@@ -17,6 +17,7 @@ vim.opt.background = "dark"
 --vim.cmd.colorscheme "PaperColor"
 --vim.cmd.colorscheme "nordic"
 --vim.cmd.colorscheme "edge"
+--vim.cmd.colorscheme "NeoSolarized"
 vim.cmd.colorscheme "rose-pine"
 --vim.cmd.colorscheme "nightfox"
 --require("onedark").setup({})
