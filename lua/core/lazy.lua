@@ -60,22 +60,6 @@ local plugins = {
     'szw/vim-maximizer',
 
     ---------------------------------------------
-    -- keybind help
-    {
-        "folke/which-key.nvim",
-        event = "VeryLazy",
-        init = function()
-            vim.o.timeout = true
-            vim.o.timeoutlen = 300
-        end,
-        opts = {
-            -- your configuration comes here
-            -- or leave it empty to use the default settings
-            -- refer to the configuration section below
-        }
-    },
-
-    ---------------------------------------------
     -- status line
     {
         'nvim-lualine/lualine.nvim',
@@ -128,7 +112,7 @@ local plugins = {
         dependencies = {
             -- LSP Support
             'neovim/nvim-lspconfig', -- Required
-            {                  -- Optional
+            {                        -- Optional
                 'williamboman/mason.nvim',
                 init = function()
                     pcall(vim.cmd, 'MasonUpdate')
@@ -138,9 +122,9 @@ local plugins = {
             { 'williamboman/mason-lspconfig.nvim' }, -- Optional
 
             -- Autocompletion
-            { 'hrsh7th/nvim-cmp' }, -- Required
+            { 'hrsh7th/nvim-cmp' },     -- Required
             { 'hrsh7th/cmp-nvim-lsp' }, -- Required
-            { 'L3MON4D3/LuaSnip' }, -- Required
+            { 'L3MON4D3/LuaSnip' },     -- Required
         }
     }
 }
