@@ -129,5 +129,5 @@ local plugins = {
     }
 }
 
-local opts = {}
+local opts = { inlay_hints = true }
 require("lazy").setup(plugins, opts)
