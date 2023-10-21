@@ -24,12 +24,13 @@ local plugins = {
 
     ---------------------------------------------
     -- a world of colors in neovim
+    'rose-pine/neovim',
+    --[[
     'overcache/NeoSolarized',
     'EdenEast/nightfox.nvim',
     'sainnhe/edge',
     'monsonjeremy/onedark.nvim',
     'NLKNguyen/papercolor-theme',
-    'rose-pine/neovim',
     'Rigellute/shades-of-purple.vim',
     'catppuccin/nvim',
     'bluz71/vim-nightfly-colors',
@@ -44,6 +45,7 @@ local plugins = {
     'ray-x/aurora',
     'AlexvZyl/nordic.nvim',
     'Shatur/neovim-ayu',
+    --]]
 
     ---------------------------------------------
     -- file explorer
@@ -81,11 +83,14 @@ local plugins = {
     ---------------------------------------------
     -- startup screen
     {
-        "startup-nvim/startup.nvim",
-        dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
-        init = function()
-            require("startup").setup({ theme = "startify" }) -- put theme name here
-        end
+        'nvimdev/dashboard-nvim',
+        event = 'VimEnter',
+        config = function()
+            require('dashboard').setup {
+                -- config
+            }
+        end,
+        dependencies = { { 'nvim-tree/nvim-web-devicons' } }
     },
 
     ---------------------------------------------
@@ -94,7 +99,7 @@ local plugins = {
 
     ---------------------------------------------
     -- indenting help
-    'lukas-reineke/indent-blankline.nvim',
+    ----'lukas-reineke/indent-blankline.nvim',
 
     ---------------------------------------------
     -- type hints
@@ -126,6 +131,23 @@ local plugins = {
             { 'hrsh7th/cmp-nvim-lsp' }, -- Required
             { 'L3MON4D3/LuaSnip' },     -- Required
         }
+    },
+
+    {
+        "TimUntersberger/neogit",
+        cmd = "Neogit",
+        config = function()
+            require("neogit").setup({
+                kind = "split", -- opens neogit in a split
+                signs = {
+                    -- { CLOSED, OPENED }
+                    section = { "", "" },
+                    item = { "", "" },
+                    hunk = { "", "" },
+                },
+                integrations = { diffview = true }, -- adds integration with diffview.nvim
+            })
+        end,
     }
 }
 

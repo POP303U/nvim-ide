@@ -14,13 +14,13 @@ keymap.set('n', '<leader>cs', ':colorscheme ')
 keymap.set('n', '<leader>nh', ':nohl<CR>')
 keymap.set('n', 'x', '"_x')
 
-keymap.set('n', '<leader>+', '<c-a>')       -- increment selected number 
-keymap.set('n', '<leader>-', '<c-x>')       -- decrement selected number
+keymap.set('n', '<leader>+', '<c-a>')          -- increment selected number
+keymap.set('n', '<leader>-', '<c-x>')          -- decrement selected number
 
-keymap.set('n', '<leader>sv', '<c-w>v')     -- split window vertically
-keymap.set('n', '<leader>sh', '<c-w>s')     -- split window horizontally
-keymap.set('n', '<leader>se', '<c-w>=')     -- make split windows equal width (if changed)
-keymap.set('n', '<leader>sx', ':close<cr>') -- close current split window
+keymap.set('n', '<leader>sv', '<c-w>v')        -- split window vertically
+keymap.set('n', '<leader>sh', '<c-w>s')        -- split window horizontally
+keymap.set('n', '<leader>se', '<c-w>=')        -- make split windows equal width (if changed)
+keymap.set('n', '<leader>sx', ':close<cr>')    -- close current split window
 
 keymap.set('n', '<leader>to', ':tabnew<cr>')   -- open new tab
 keymap.set('n', '<leader>tx', ':tabclose<cr>') -- close current tab
@@ -55,10 +55,13 @@ keymap.set('n', '<leader>ss', ':SSave<CR>')
 keymap.set('n', '<leader>sd', ':SDelete<CR>')
 keymap.set('n', '<leader>sc', ':SClose<CR>')
 
+-- neogit
+keymap.set('n', '<leader>ng', ':Neogit kind=vsplit<CR>')
+
 -- ToggleTerm
-keymap.set('n', '<leader>th', ':ToggleTerm size=10 dir='.. current_dir ..' direction=horizontal<CR>')
-keymap.set('n', '<leader>tv', ':ToggleTerm size=40 dir='.. current_dir ..' direction=vertical<CR>')
-keymap.set('n', '<leader>tf', ':ToggleTerm size=20 dir='.. current_dir ..' direction=float<CR>')
+keymap.set('n', '<leader>th', ':ToggleTerm size=10 dir=' .. current_dir .. ' direction=horizontal<CR>')
+keymap.set('n', '<leader>tv', ':ToggleTerm size=40 dir=' .. current_dir .. ' direction=vertical<CR>')
+keymap.set('n', '<leader>tf', ':ToggleTerm size=20 dir=' .. current_dir .. ' direction=float<CR>')
 keymap.set('t', '<esc>', [[<C-\><C-n>]])
 keymap.set('t', '<C-h>', [[<Cmd>wincmd h<CR>]])
 keymap.set('t', '<C-j>', [[<Cmd>wincmd j<CR>]])

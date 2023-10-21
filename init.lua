@@ -29,5 +29,8 @@ require 'core.plugin_config.indent-blankline'
 -- loads lsp-config
 require 'core.plugin_config.lsp.lsp-zero'
 
+-- startup themes
+require 'custom.themes.my_theme'
+
 -- load transparency last
 require 'core.plugin_config.transparent'

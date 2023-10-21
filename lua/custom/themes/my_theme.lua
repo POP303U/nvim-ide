@@ -67,7 +67,7 @@ require("dashboard").setup({
                 keymap = 'SPC ',
                 key_hl = 'Number',
                 key_format = ' %s', -- remove default surrounding `[]`
-                action = 'Neogit'
+                action = 'Neogit kind=vsplit'
             },
 
 
