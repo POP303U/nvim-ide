@@ -58,6 +58,9 @@ keymap.set('n', '<leader>sc', ':SClose<CR>')
 -- neogit
 keymap.set('n', '<leader>ng', ':Neogit kind=vsplit<CR>')
 
+-- Lazy
+keymap.set('n', '<leader>l', ':Lazy<CR>')
+
 -- ToggleTerm
 keymap.set('n', '<leader>th', ':ToggleTerm size=10 dir=' .. current_dir .. ' direction=horizontal<CR>')
 keymap.set('n', '<leader>tv', ':ToggleTerm size=40 dir=' .. current_dir .. ' direction=vertical<CR>')

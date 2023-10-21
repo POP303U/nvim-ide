@@ -1,5 +1,10 @@
 require("dashboard").setup({
     theme = 'doom',
+    preview = {
+                file_path = 'true',    -- preview file path
+                file_height = 5,  -- preview file height
+                file_width =  5,   -- preview file width
+            },
     config = {
         header = {
             "                                                           ",
@@ -16,7 +21,7 @@ require("dashboard").setup({
         },
         center = {
             {
-                desc = 'Quick Help',
+                desc = 'Useful Commands',
                 desc_hl = 'String'
             },
 
@@ -38,6 +43,16 @@ require("dashboard").setup({
                 key_hl = 'Number',
                 key_format = ' %s', -- remove default surrounding `[]`
                 action = 'Telescope oldfiles'
+            },
+            {
+                icon = '󰥨 ',
+                icon_hl = 'Title',
+                desc = 'Live Grep',
+                key = 'fg',
+                keymap = 'SPC ',
+                key_hl = 'Number',
+                key_format = ' %s', -- remove default surrounding `[]`
+                action = 'Telescope live_grep'
             },
             {
                 icon = '󱞑 ',
@@ -70,6 +85,7 @@ require("dashboard").setup({
                 action = 'Neogit kind=vsplit'
             },
 
+            
 
         },
         footer = { 'Write programs that do one thing and do it well - The Unix Philosophy' } --your footer

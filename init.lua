@@ -9,7 +9,7 @@
 
 -- init basic settings
 require 'core.lazy'
-require 'core.remap'
+require 'core.keymap'
 require 'core.options'
 
 -- loads colortheme
