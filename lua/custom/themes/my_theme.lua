@@ -1,10 +1,10 @@
 require("dashboard").setup({
     theme = 'doom',
     preview = {
-                file_path = 'true',    -- preview file path
-                file_height = 5,  -- preview file height
-                file_width =  5,   -- preview file width
-            },
+        file_path = 'true', -- preview file path
+        file_height = 5,    -- preview file height
+        file_width = 5,     -- preview file width
+    },
     config = {
         header = {
             "                                                           ",
@@ -27,6 +27,7 @@ require("dashboard").setup({
 
             {
                 icon = ' ',
+                icon_hl = 'Title',
                 desc = 'Find Files',
                 key = 'ff',
                 keymap = 'SPC ',
@@ -85,7 +86,7 @@ require("dashboard").setup({
                 action = 'Neogit kind=vsplit'
             },
 
-            
+
 
         },
         footer = { 'Write programs that do one thing and do it well - The Unix Philosophy' } --your footer
