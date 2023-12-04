@@ -25,6 +25,7 @@ require 'core.plugin_config.navigator'
 require 'core.plugin_config.indent-blankline'
 require 'core.plugin_config.neogit'
 require 'core.plugin_config.oil'
+require 'core.plugin_config.harpoon'
 
 -- startup themes
 require 'custom.themes.my_theme'
