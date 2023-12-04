@@ -20,17 +20,17 @@ require 'core.plugin_config.theme'
 require 'core.plugin_config.telescope'
 require 'core.plugin_config.treesitter'
 require 'core.plugin_config.lualine'
-require 'core.plugin_config.nvim-cmp'
-require 'core.plugin_config.nvim-tree'
 require 'core.plugin_config.toggleterm'
 require 'core.plugin_config.navigator'
 require 'core.plugin_config.indent-blankline'
-
--- loads lsp-config
-require 'core.plugin_config.lsp.lsp-zero'
+require 'core.plugin_config.neogit'
+require 'core.plugin_config.oil'
 
 -- startup themes
 require 'custom.themes.my_theme'
 
 -- load transparency last
 require 'core.plugin_config.transparent'
+
+-- loads lsp-config
+require 'core.plugin_config.lsp.lsp-zero'
