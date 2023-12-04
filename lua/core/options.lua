@@ -1,10 +1,6 @@
 -- variable for conciseness
 local options            = vim.opt
 
--- disable netrw at the very start of your init.lua (necessary for config to work)
-vim.g.loaded_netrw       = 1
-vim.g.loaded_netrwPlugin = 1
-
 -- enable mouse (if you really need it for some reason)
 options.mouse            = 'a'
 
