@@ -1,13 +1,7 @@
-local lsp = require('lsp-zero').preset({})
-
-lsp.preset("recommended")
-
-lsp.ensure_installed({
-    'lua_ls',
-})
+local lsp = require('lsp-zero')
 
 lsp.set_preferences({
-    suggest_lsp_servers = false,
+    suggest_lsp_servers = true,
     sign_icons = {
         error = 'E',
         warn = 'W',
@@ -15,7 +9,6 @@ lsp.set_preferences({
         info = 'I'
     }
 })
-
 
 lsp.on_attach(function(client, bufnr) --client is unused for some reason
     local opts = { buffer = bufnr, remap = false }
@@ -31,24 +24,28 @@ lsp.on_attach(function(client, bufnr) --client is unused for some reason
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
--- (Optional) Configure lua language server for neovim
-require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
+local cmp = require('cmp')
+local cmp_action = require('lsp-zero').cmp_action()
 
-lsp.setup()
-
-vim.api.nvim_create_augroup("LspAttach_inlayhints", {})
-vim.api.nvim_create_autocmd("LspAttach", {
-    group = "LspAttach_inlayhints",
-    callback = function(args)
-        if not (args.data and args.data.client_id) then
-            return
-        end
-
-        local bufnr = args.buf
-        local client = vim.lsp.get_client_by_id(args.data.client_id)
-        require("lsp-inlayhints").on_attach(client, bufnr)
-    end,
+cmp.setup({
+    mapping = cmp.mapping.preset.insert({
+        ['<CR>'] = cmp.mapping.confirm({ select = true }),
+        ['<C-Space>'] = cmp.mapping.complete(),
+        ['<C-n>'] = cmp.mapping.select_next_item(),
+        ['<C-p>'] = cmp.mapping.select_prev_item(),
+        ['<C-d>'] = cmp.mapping.scroll_docs(-4),
+        ['<C-f>'] = cmp.mapping.scroll_docs(4),
+    })
 })
+
+require('mason').setup({})
+require('mason-lspconfig').setup({
+    handlers = {
+        lsp.default_setup,
+    },
+})
+
+require('luasnip.loaders.from_vscode').lazy_load()
 
 -- auto format on save
 vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
