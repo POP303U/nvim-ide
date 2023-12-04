@@ -30,8 +30,8 @@ require('lualine').setup {
         theme = 'auto',
         --normal = { c = { fg = colors.fg, bg = colors.bg } },
         --inactive = { c = { fg = colors.fg, bg = colors.bg } },
-        component_separators = { left = '|', right = '|' },
-        section_separators = { left = '|', right = '|' },
+        component_separators = { left = '', right = '' },
+        section_separators = { left = '', right = '' },
         disabled_filetypes = {
             statusline = {},
             winbar = {},
