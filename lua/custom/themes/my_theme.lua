@@ -86,8 +86,8 @@ require("dashboard").setup({
                 icon = '󱘎 ',
                 icon_hl = 'Title',
                 desc = 'Open Oil',
-                key = ' ',
-                keymap = '-    ',
+                key = ' None',
+                keymap = '    -',
                 key_hl = 'Number',
                 key_format = ' %s', -- remove default surrounding `[]`
                 action = 'Oil'
