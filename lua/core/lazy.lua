@@ -15,18 +15,14 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
     ---------------------------------------------
-    -- snippets for lsp-zero
-    'hrsh7th/cmp-path',
-    'hrsh7th/cmp-nvim-lsp',
-    'hrsh7th/cmp-buffer',
-    'saadparwaiz1/cmp_luasnip',
-    'rafamadriz/friendly-snippets',
+    -- icons (dependencies)
+    'nvim-tree/nvim-web-devicons',
+    'nvim-lua/plenary.nvim',
 
     ---------------------------------------------
     -- a world of colors in neovim
     'rose-pine/neovim',
     'catppuccin/nvim',
-    --[[
     'overcache/NeoSolarized',
     'EdenEast/nightfox.nvim',
     'sainnhe/edge',
@@ -45,110 +41,57 @@ local plugins = {
     'ray-x/aurora',
     'AlexvZyl/nordic.nvim',
     'Shatur/neovim-ayu',
-    --]]
 
-    ---------------------------------------------
-    -- file explorer
-    {
-        'nvim-tree/nvim-tree.lua',
-        dependencies = {
-            'nvim-tree/nvim-web-devicons',
-        },
-    },
+    -- Speedy Explorers --
+    'stevearc/oil.nvim',
+    'theprimeagen/harpoon',
 
-    ---------------------------------------------
-    -- navigation
+    -- navigation --
     'numToStr/Navigator.nvim',
     'szw/vim-maximizer',
 
-    ---------------------------------------------
-    -- status line
-    {
-        'nvim-lualine/lualine.nvim',
-        dependencies = { 'nvim-tree/nvim-web-devicons' }
-    },
+    -- status line --
+    'nvim-lualine/lualine.nvim',
 
-    ---------------------------------------------
-    -- syntax highlighting
+    -- syntax highlighting --
     'nvim-treesitter/nvim-treesitter',
 
-    ---------------------------------------------
-    -- fuzzy finder
-    {
-        'nvim-telescope/telescope.nvim',
-        tag = '0.1.4',
-        dependencies = { { 'nvim-lua/plenary.nvim' } }
-    },
+    -- fuzzy finder --
+    'nvim-telescope/telescope.nvim',
 
-    ---------------------------------------------
-    -- startup screen
-    {
-        'nvimdev/dashboard-nvim',
-        event = 'VimEnter',
-        config = function()
-            require('dashboard').setup {
-                -- config
-            }
-        end,
-        dependencies = { { 'nvim-tree/nvim-web-devicons' } }
-    },
+    -- startup screen --
+    'nvimdev/dashboard-nvim',
 
-    ---------------------------------------------
-    -- terminal
-    { 'akinsho/toggleterm.nvim', version = "*", config = true },
+    -- terminal --
+    { 'akinsho/toggleterm.nvim',          version = "*",  config = true },
 
-    ---------------------------------------------
-    -- indenting help
-    ----'lukas-reineke/indent-blankline.nvim',
+    -- git integration
+    "TimUntersberger/neogit",
+    'f-person/git-blame.nvim',
 
-    ---------------------------------------------
-    -- type hints
+    -- indenting help --
+    'lukas-reineke/indent-blankline.nvim',
+
+    -- type hints --
     'lvimuser/lsp-inlayhints.nvim',
 
-    ---------------------------------------------
-    -- transparency support
+    -- undotree --
+    'mbbill/undotree',
+
+    -- transparency support --
     'xiyaowong/transparent.nvim',
 
-    ---------------------------------------------
-    -- lsp-zero
-    {
-        'VonHeikemen/lsp-zero.nvim',
-        branch = 'v2.x',
-        dependencies = {
-            -- LSP Support
-            'neovim/nvim-lspconfig', -- Required
-            {                        -- Optional
-                'williamboman/mason.nvim',
-                init = function()
-                    pcall(vim.cmd, 'MasonUpdate')
-                end,
-            },
+    --========================================--
+    -- lsp-zero yay --
+    { 'williamboman/mason.nvim' },
+    { 'williamboman/mason-lspconfig.nvim' },
+    { 'VonHeikemen/lsp-zero.nvim',        branch = 'v3.x' },
+    { 'neovim/nvim-lspconfig' },
+    { 'hrsh7th/cmp-nvim-lsp' },
+    { 'hrsh7th/nvim-cmp' },
+    { 'L3MON4D3/LuaSnip' },
+    --========================================--
 
-            { 'williamboman/mason-lspconfig.nvim' }, -- Optional
-
-            -- Autocompletion
-            { 'hrsh7th/nvim-cmp' },     -- Required
-            { 'hrsh7th/cmp-nvim-lsp' }, -- Required
-            { 'L3MON4D3/LuaSnip' },     -- Required
-        }
-    },
-
-    {
-        "TimUntersberger/neogit",
-        cmd = "Neogit",
-        config = function()
-            require("neogit").setup({
-                kind = "split", -- opens neogit in a split
-                signs = {
-                    -- { CLOSED, OPENED }
-                    section = { "", "" },
-                    item = { "", "" },
-                    hunk = { "", "" },
-                },
-                integrations = { diffview = true }, -- adds integration with diffview.nvim
-            })
-        end,
-    }
 }
 
 local opts = { inlay_hints = true }
