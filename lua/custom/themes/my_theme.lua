@@ -8,6 +8,13 @@ require("dashboard").setup({
     config = {
         header = {
             "                                                           ",
+            "                                                           ",
+            "                                                           ",
+            "                                                           ",
+            "                                                           ",
+            "                                                           ",
+            "                                                           ",
+            "                                                           ",
             "                                          /$$              ",
             "                                         |__/              ",
             " /$$$$$$$   /$$$$$$   /$$$$$$  /$$    /$$ /$$ /$$$$$$/$$$$ ",
@@ -66,28 +73,25 @@ require("dashboard").setup({
                 action = 'Lazy'
             },
             {
-                icon = '󱘎 ',
-                icon_hl = 'Title',
-                desc = 'Open NvimTree',
-                key = 'e ',
-                keymap = 'SPC ',
-                key_hl = 'Number',
-                key_format = ' %s', -- remove default surrounding `[]`
-                action = 'NvimTreeToggle'
-            },
-            {
                 icon = '󰊢 ',
                 icon_hl = 'Title',
                 desc = 'Open Neogit',
-                key = 'ng',
+                key = 'g ',
                 keymap = 'SPC ',
                 key_hl = 'Number',
                 key_format = ' %s', -- remove default surrounding `[]`
                 action = 'Neogit kind=vsplit'
             },
-
-
-
+            {
+                icon = '󱘎 ',
+                icon_hl = 'Title',
+                desc = 'Open Oil',
+                key = ' ',
+                keymap = '-    ',
+                key_hl = 'Number',
+                key_format = ' %s', -- remove default surrounding `[]`
+                action = 'Oil'
+            },
         },
         footer = { 'Write programs that do one thing and do it well - The Unix Philosophy' } --your footer
     }
