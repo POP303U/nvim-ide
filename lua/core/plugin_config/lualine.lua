@@ -19,11 +19,6 @@ local function get_lsp_status()
     end
 end
 
---local colors = {
---    bg = '#1e1e2e', -- Base
---    fg = '#cdd6f4', -- Text
---}
-
 require('lualine').setup {
     options = {
         icons_enabled = true,
