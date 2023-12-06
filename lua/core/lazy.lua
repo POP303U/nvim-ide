@@ -46,6 +46,9 @@ local plugins = {
     'stevearc/oil.nvim',
     'theprimeagen/harpoon',
 
+    -- Coloring --
+    'norcalli/nvim-colorizer.lua',
+
     -- navigation --
     'numToStr/Navigator.nvim',
     'szw/vim-maximizer',
