@@ -49,6 +49,9 @@ local plugins = {
     -- Coloring --
     'norcalli/nvim-colorizer.lua',
 
+    -- bracket autopairing --
+    'windwp/nvim-autopairs',
+    
     -- navigation --
     'numToStr/Navigator.nvim',
     'szw/vim-maximizer',
