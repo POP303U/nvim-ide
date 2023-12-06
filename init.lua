@@ -26,6 +26,7 @@ require 'core.plugin_config.indent-blankline'
 require 'core.plugin_config.neogit'
 require 'core.plugin_config.oil'
 require 'core.plugin_config.harpoon'
+require 'core.plugin_config.colorizer'
 
 -- startup themes
 require 'custom.themes.my_theme'
